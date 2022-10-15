@@ -1,0 +1,23 @@
+### MariaDB Props
+
+
+mariadb:
+  auth:
+    username: todouser
+    password: todopwd
+    database: tododb
+  primary:
+    podSecurityContext:
+      enabled: false
+    containerSecurityContext:
+      enabled: false
+
+env:
+  - name: DATABASE_NAME
+    value: tododb
+  - name: DATABASE_USER
+    value: todouser
+  - name: DATABASE_PASSWORD
+    value: todopwd
+  - name: DATABASE_SVC
+    value: todo-list-mariadb
