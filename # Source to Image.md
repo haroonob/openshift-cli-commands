@@ -3,7 +3,7 @@
 ### Copy the S2I scripts to the appropriate location in the builder image
 `COPY ./s2i/bin/ /usr/libexec/s2i`
 ### Build your base image
-`podman build -t s2i-do288-go . layers=false`
+`podman build -t s2i-do288-go . --layers=false`
 
 ### Build a Dockerfile for an application container image that combines the S2I builder image and the application source code locally
 `s2i build source_code_of_child_app image_name app_name --as-dockerfile /PATH_OF_DOCKER_FILE/Dockerfile`

@@ -1,7 +1,7 @@
 # Notes
 
 1. Application deployment  -- check out Creating New App.md
-2. Optimize containerfile  -- && operator and use --layers=false for building contrainer
+2. Optimize containerfile  -- && operator and use --layers=false  --format docker for building contrainer
 3. Inject configmap -- Config Map & Secrets
 4. Post-commit build hook  # Build Hook.md
 5. Custom s2i  
